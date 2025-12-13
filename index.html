@@ -7,62 +7,111 @@
 
 <!-- Facebook Pixel Code -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'YOUR_PIXEL_ID'); 
-  fbq('track', 'PageView');
-  fbq('track', 'ViewContent');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
 
 <style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#fffafc;
+}
+.header{
+  background:#ff4fa3;
+  color:white;
+  padding:20px;
+  text-align:center;
+  font-size:26px;
+  font-weight:bold;
+}
+.hero{
+  padding:40px 20px;
+  text-align:center;
+}
+.cta-btn{
+  background:#ff4fa3;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:6px;
+  font-size:16px;
+  cursor:pointer;
+}
+.products{
+  display:flex;
+  gap:20px;
+  padding:30px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.card{
+  width:260px;
+  border:1px solid #eee;
+  border-radius:8px;
+  padding:15px;
+  text-align:center;
+}
+.footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+}
+</style>
+</head>
+
 <body>
-  <div class="header">Kurti Mart ✨<br/><span style="font-size:16px;font-weight:normal;">Elegance • Comfort • Trust</span></div>
 
-  <div class="hero">
-    <h1>আপনার জন্য বাছাই করা এক্সক্লুসিভ কুর্তি কালেকশন</h1>
-    <p>স্টাইল, আরাম আর প্রিমিয়াম কোয়ালিটির নিখুঁত সমন্বয়। Kurti Mart–এর প্রতিটি কুর্তি আপনাকে দেবে আত্মবিশ্বাসী ও রুচিশীল লুক।</p>
-    <a href="https://wa.me/8801XXXXXXXXX" target="_blank"><button class="cta-btn">Order Now (WhatsApp)" onclick="fbq('track','Purchase');"</button></a>
-    <button class="cta-btn" style="background:#ff78bd;margin-left:10px;">Send Message (Inbox)" onclick="fbq('track','Lead');"</button>
-  </div>
+<div class="header">
+Kurti Mart ✨<br/>
+<span style="font-size:16px;font-weight:normal;">
+Elegance • Comfort • Trust
+</span>
+</div>
 
-  <div class="trust" style="background:#fff0f7;padding:30px;text-align:center;">
-  <h2 style="color:#ff4fa3;">Why Choose Kurti Mart?</h2>
-  <p>✔ Cash on Delivery Available<br/>✔ Premium Quality Fabric<br/>✔ Perfect Stitching & Fit<br/>✔ Trusted by 1000+ Happy Customers</p>
+<div class="hero">
+<h1>আপনার জন্য বাছাই করা এক্সক্লুসিভ কুর্তি কালেকশন</h1>
+<p>স্টাইল, আরাম আর প্রিমিয়াম কোয়ালিটির নিখুঁত সমন্বয়।</p>
+
+<a href="https://wa.me/8801XXXXXXXXX" target="_blank">
+<button class="cta-btn" onclick="fbq('track','Purchase')">
+Order Now (WhatsApp)
+</button>
+</a>
+
+<button class="cta-btn" style="background:#ff78bd;margin-left:10px;"
+onclick="fbq('track','Lead')">
+Send Message (Inbox)
+</button>
 </div>
 
 <div class="products">
-    <div class="card">
-      <img src="https://via.placeholder.com/300" alt="Product 1" />
-      <h3>Product Title</h3>
-      <p>Short description of the product.</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300" alt="Product 2" />
-      <h3>Product Title</h3>
-      <p>Short description of the product.</p>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/300" alt="Product 3" />
-      <h3>Product Title</h3>
-      <p>Short description of the product.</p>
-    </div>
-  </div>
-
-  <div class="review" style="background:#fff;padding:30px;text-align:center;">
-  <h2 style="color:#ff4fa3;">Customer Love 💕</h2>
-  <p>"Quality exactly as shown. Loved the fabric & fitting!"<br/>— Happy Customer</p>
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Premium Kurti</h3>
+<p>Comfortable & Stylish</p>
 </div>
 
-<div class="footer">© 2025 Your Brand. All Rights Reserved.</div>
+<div class="card">
+<img src="https://via.placeholder.com/300">
+<h3>Elegant Design</h3>
+<p>Perfect for any occasion</p>
+</div>
+</div>
+
+<div class="footer">
+© 2025 Kurti Mart. All Rights Reserved.
+</div>
+
 </body>
 </html>
